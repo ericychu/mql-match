@@ -29,7 +29,7 @@ test('mql:update-query', t => {
   t.deepEqual(
     fn({
       a: [
-        { k: -32 },
+        { k: -32 }
       ]
     }),
     {

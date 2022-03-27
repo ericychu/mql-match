@@ -3,7 +3,7 @@ import test from 'ava'
 import { $inc } from './inc.js'
 
 function compile (path, value) {
-  return new Function('obj', $inc(`obj.${path}`, value) + `; return obj;`)
+  return new Function('obj', $inc(`obj.${path}`, value) + '; return obj;')
 }
 
 test('$inc:undefined', t => {
